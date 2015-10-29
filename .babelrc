@@ -1,0 +1,7 @@
+{
+  "loose": "all",
+  "stage": 0,
+  "sourceMaps": true,
+  "nonStandard": true,
+  "jsxPragma": "h"
+}

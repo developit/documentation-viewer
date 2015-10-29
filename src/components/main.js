@@ -29,13 +29,26 @@ export default ({ error, docs, symbol }) => {
 				<Card.Title class="graphic">
 					<Card.TitleText>Documentation</Card.TitleText>
 				</Card.Title>
+
 				<Card.Text>
-					<Icon icon="info" style="float:left;margin-top:30px" />
+					<Icon icon="info" style="float:left; margin-top:30px" />
 					<p class="info">
 						Paste your .json URL into the box above
 						to load and render your documentation.
 					</p>
+
+					<ul style="list-style:none;padding:0 10px;">
+						<li>
+							<Icon icon="build" style="padding:10px; vertical-align:middle" />
+							Supports output from <a href="http://documentation.js.org" target="_blank">documentation.js</a>.
+						</li>
+						<li>
+							<Icon icon="code" style="padding:10px; vertical-align:middle" />
+							<a href="https://github.com/developit/documentation-viewer" target="_blank">Documentation Viewer project on Github</a>
+						</li>
+					</ul>
 				</Card.Text>
+
 				<Card.Actions style="text-align:center;">
 					<small>Powered by &nbsp;</small>
 					<a href="https://github.com/developit/preact" target="_blank">Preact</a>
@@ -43,10 +56,6 @@ export default ({ error, docs, symbol }) => {
 			</Card>
 		);
 	}
-
-	//<Button fab colored onClick={ actionButton }>
-	//	<Icon>new</Icon>
-	//</Button>
 
 	return (
 		<Layout.Content id="main">

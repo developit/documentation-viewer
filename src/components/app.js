@@ -6,7 +6,6 @@ import Header from './header';
 import Sidebar from './sidebar';
 import Main from './main';
 
-//const DEMO = 'https://raw.githubusercontent.com/documentationjs/documentation/master/test/fixture/class.output.json';
 const DEMO = 'https://github.com/documentationjs/documentation/blob/master/test/fixture/class.output.json';
 
 export default class App extends Component {

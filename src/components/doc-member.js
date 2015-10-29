@@ -1,5 +1,4 @@
 import { h } from 'preact';
-import DocMember from './doc-member';
 
 export default ({ member:{name, description, params} }) => {
 	let doc = [];

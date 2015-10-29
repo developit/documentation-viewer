@@ -34,6 +34,7 @@
     "babel-runtime": "^5.8.20",
     "decko": "^1.1.0",
     "material-design-lite": "^1.0.5",
+    "object-assign": "^4.0.1",
     "preact": "^1.5.1"
   }
 }

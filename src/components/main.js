@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { Layout, Card, Icon } from 'preact-mdl';
+import DocSymbol from './doc-symbol';
 
 export default ({ error, docs, symbol }) => {
 	let content = [];

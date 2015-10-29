@@ -1,0 +1,126 @@
+@import (css) '~normalize.css';
+@import (css) '//storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css';
+@import (css) '//fonts.googleapis.com/icon?family=Material+Icons';
+@import (css) '//fonts.googleapis.com/css?family=Roboto:300,500,700';
+
+
+html, body {
+	background: #E0E4E9;
+}
+
+#docs {
+	position: static;
+	overflow: visible;
+}
+
+main {
+	display: block;
+	text-align: center;
+}
+
+.info {
+	margin: 0 auto;
+	padding: 10px;
+	max-width: 280px;
+}
+
+.symbol {
+	.symbol-kind {
+		position: absolute;
+		left: 20px;
+		top: 80px;
+		font-size: 12px;
+		font-style: italic;
+		color: #FFF;
+	}
+}
+
+.mdl-card {
+	display: inline-block;
+	text-align: left;
+	margin: 20px;
+	padding: 0 0 10px;
+	width: auto;
+	&.wide {
+		max-width: 1000px;
+		min-width: 600px;
+		@media (max-width:640px) {
+			& {
+				display: block;
+				min-width: 0;
+			}
+		}
+	}
+	&.skinny {
+		max-width: 600px;
+		min-width: 400px;
+		@media (max-width:440px) {
+			& {
+				display: block;
+				min-width: 0;
+			}
+		}
+	}
+}
+
+.mdl-card__title.graphic {
+	height: 100px;
+	background: url(https://lh3.googleusercontent.com/-WiwrPHajH08/VTpzIfl09SI/AAAAAAAA4S4/062nOW9T-I4/s630-fcrop64=1,00002f44ffffc017/material-design-wallpaper-1.png) center/cover;
+	.mdl-card__title-text {
+		color: #FFF;
+		font-size: 300%;
+		text-shadow: 0 0 1px #000, 0 0 5px rgba(0,0,0,0.3);
+	}
+}
+
+.members {
+	margin: 0 20px;
+	.member {
+		padding-left: 5px;
+		border-left: 2px solid #E6E6E6;
+	}
+	h2 {
+		margin: 5px 0 0;
+		font-size: 160%;
+		line-height: 1.21;
+		color: #888;
+	}
+	h3 {
+		font-size: 120%;
+		line-height: 1.21;
+		margin-bottom: 0;
+	}
+	p {
+		font-size: 12px;
+	}
+}
+
+h4 {
+	font-size: 110%;
+	line-height: 1.21;
+	margin: 5px 0;
+	color: #666;
+}
+.params {
+	padding-bottom: 10px;
+}
+.param {
+	margin: -1px 10px 0;
+	padding: 5px;
+	background: #FFF;
+	border: 1px solid #DDD;
+	font-size: 80%;
+	dt {
+		float: left;
+		padding-right: 10px;
+		min-width: 6em;
+	}
+	dd {
+		display: block;
+	}
+}
+
+.mdl-card__supporting-text,
+.mdl-card__supporting-text > p {
+	font-size: 16px;
+}

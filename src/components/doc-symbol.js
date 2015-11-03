@@ -18,7 +18,7 @@ export default ({ docs, symbol, ...props }) => {
 					</div>
 				</Card.Text>
 
-				<div class="members">{ Object.keys(symbol.members).map( type => (
+				<div class="members">{ Object.keys(symbol.members || {}).map( type => (
 					symbol.members[type].length ? (
 						<div class={'members-type-'+type}>
 							<h2>{ type }</h2>

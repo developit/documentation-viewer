@@ -31,15 +31,9 @@ export default class App extends Component {
 			.then( r => r.json() )
 			.then( docs => {
 				assign(docs, { url, resolvedUrl });
+				console.log(docs);
 				this.setState({ docs, error:null });
 			});
-
-		// try {
-		// 	let res = await (await fetch(url)).json();
-		// 	this.setState({ docs, error:null });
-		// } catch(error) {
-		// 	this.setState(error);
-		// }
 	}
 
 	@bind

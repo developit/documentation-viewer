@@ -38,6 +38,8 @@ export default class App extends Component {
 
 	@bind
 	go(to) {
+		if (to==='/home') return this.setState({ error:null, symbol:null });
+
 		let { docs } = this.state,
 			symbol = docs.filter( s => s.name.match(to) )[0],
 			error = symbol ? null : `Symbol "${to}" not found`;

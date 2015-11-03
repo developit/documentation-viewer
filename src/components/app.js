@@ -22,6 +22,10 @@ export default class App extends Component {
 		let gh = resolvedUrl.match(/^https?:\/\/github\.com\/([^/]+\/[^/]+)\/blob\/(.+)$/i);
 		if (gh) resolvedUrl = `https://raw.githubusercontent.com/${gh[1]}/${gh[2]}`;
 
+		// convert gist URLs:
+		let gist = resolvedUrl.match(/^https?:\/\/gist\.github\.com\/(.+)$/i);
+		if (gist) resolvedUrl = `https://gist.githubusercontent.com/${gist[1]}/raw`;
+
 		fetch(resolvedUrl)
 			.catch( error => this.setState({ error }) )
 			.then( r => r.json() )

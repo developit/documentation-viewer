@@ -17,8 +17,8 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
-    "babel-loader": "^5.3.2",
-    "css-loader": "^0.18.0",
+    "babel-loader": "^5.3.3",
+    "css-loader": "^0.21.0",
     "exports-loader": "^0.6.2",
     "extract-text-webpack-plugin": "^0.8.2",
     "http-server": "^0.8.5",
@@ -26,7 +26,7 @@
     "ncp": "^2.0.0",
     "normalize.css": "^3.0.3",
     "source-map-loader": "^0.1.5",
-    "style-loader": "^0.12.3",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.1",
     "webpack-dev-server": "^1.10.1"
   },

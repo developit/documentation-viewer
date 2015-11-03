@@ -14,9 +14,9 @@ module.exports = {
 		]
 	},
 	module: {
-		// preLoaders: [
-		// 	{ loader: 'source-map' }
-		// ],
+		preLoaders: [
+			{ loader: 'source-map' }
+		],
 		loaders: [
 			{
 				test: /\.jsx?$/,

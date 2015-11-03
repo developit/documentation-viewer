@@ -89,6 +89,10 @@ main {
 		font-size: 120%;
 		line-height: 1.21;
 		margin-bottom: 0;
+
+		em {
+			color: #BBB;
+		}
 	}
 	p {
 		font-size: 12px;
@@ -110,17 +114,32 @@ h4 {
 	background: #FFF;
 	border: 1px solid #DDD;
 	font-size: 80%;
+	overflow: hidden;
+
+	.param {
+		margin: -1px 0 0;
+	}
+
 	dt {
 		float: left;
 		padding-right: 10px;
-		min-width: 6em;
+		min-width: 8em;
+		font-weight: normal;
 	}
 	dd {
-		display: block;
+		display: inline-block;
+		margin: 0;
+
+		h6 {
+			margin: 0;
+			pdading: 0;
+			font-size: 100%;
+		}
 	}
 }
 
 .mdl-card__supporting-text,
 .mdl-card__supporting-text > p {
 	font-size: 16px;
+	width: auto;
 }

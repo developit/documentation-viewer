@@ -13,7 +13,9 @@ export default ({ docs, symbol, ...props }) => {
 				</Card.Title>
 
 				<Card.Text>
-					<p>{ symbol.description }</p>
+					<div style="margin:5px; padding:5px; border:1px solid #EEE;">
+						<DocMember {...{member:symbol,symbol,docs,...props}} />
+					</div>
 				</Card.Text>
 
 				<div class="members">{ Object.keys(symbol.members).map( type => (

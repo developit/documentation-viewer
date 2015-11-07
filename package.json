@@ -7,7 +7,7 @@
     "dev": "WEBPACK_ENV=dev webpack-dev-server",
     "start": "firebase serve -p ${PORT:-8080}",
     "prestart": "npm run build",
-    "build": "mkdir -p build && WEBPACK_ENV=production webpack && cp -r src/{index.html,manifest.json} build/",
+    "build": "mkdir -p build && WEBPACK_ENV=production webpack && cpy 'src/{index.html,manifest.json}' build",
     "deploy": "firebase deploy --token \"${FIREBASE_TOKEN}\""
   },
   "keywords": [
@@ -19,13 +19,13 @@
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel-loader": "^5.3.3",
+    "cpy": "^3.4.1",
     "css-loader": "^0.21.0",
     "exports-loader": "^0.6.2",
     "extract-text-webpack-plugin": "^0.8.2",
     "firebase-tools": "^2.0.2",
     "http-server": "^0.8.5",
     "less-loader": "^2.2.0",
-    "ncp": "^2.0.0",
     "normalize.css": "^3.0.3",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.0",

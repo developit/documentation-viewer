@@ -8,7 +8,7 @@
     "start": "firebase serve -p ${PORT:-8080}",
     "prestart": "npm run build",
     "build": "mkdir -p build && WEBPACK_ENV=production webpack && cp -r src/{index.html,manifest.json} build/",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy --token \"${FIREBASE_TOKEN}\""
   },
   "keywords": [
     "preact",

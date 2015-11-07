@@ -4,4 +4,4 @@ node_js:
   - '4.0'
   - '0.12'
 after_success:
-  - if [[ "${TRAVIS_PULL_REQUEST}" == "false" ]]; then npm run deploy --  --token "${FIREBASE_TOKEN}"; fi
+  - if [[ "${TRAVIS_PULL_REQUEST}" == "false" ]]; then npm run deploy -s; fi

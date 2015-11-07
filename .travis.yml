@@ -1,4 +1,6 @@
 language: node_js
 sudo: false
+node_js:
+  - stable
 after_success:
   - if [[ "${TRAVIS_PULL_REQUEST}" == "false" ]]; then npm run deploy --  --token \"${FIREBASE_TOKEN}\"; fi

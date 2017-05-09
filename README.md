@@ -1,5 +1,7 @@
 # Documentation Viewer
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/developit/documentation-viewer.svg)](https://greenkeeper.io/)
+
 A simple standalone viewer for `json` output from [documentation.js].
 
 Built with [preact], [preact-mdl] and [fetch].
